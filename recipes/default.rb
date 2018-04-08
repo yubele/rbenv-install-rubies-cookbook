@@ -4,7 +4,6 @@
 #
 
 include_recipe "rbenv::default"
-include_recipe "rbenv::ruby_build"
 
 # install library packages that is required from ruby or gems
 node[:rbenv_install_rubies][:lib_packages].each do |pkg|
